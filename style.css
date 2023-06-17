@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0064FB;
+    font-family: 'Baloo 2', cursive;
+    text-decoration: none;
+    color: #F5F5F5;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #0064FB;
+    background-color: #F5F5F5;
+    font-family: 'Baloo 2', cursive;
+    transition: .2s all ease-in-out;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #F5F5F5;
+    background-color: #0064FB;
+    border: 1px #F5F5F5 solid;
+}
+
+h1 {
+    margin-bottom: 4%;
+    line-height: 35px;
+}
