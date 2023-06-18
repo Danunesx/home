@@ -12,14 +12,22 @@
     <body>
         <div class="content">
             <p id="nomeExibido"></p>
-            <a href="menu.html">Conectar no wifi</a>
-            <a href="menu.html">Versículo do dia</a>
-            <a href="menu.html">Música do dia</a>
+            <div>
+                <button id="mostrarSenha" onclick="mostrarTexto()">Conectar a um wifi</button>
+                <p id="texto" class="hidden">Senha: 54589353</p>
+            </div>
+            <a href="">Versículo do dia</a>
+            <a href="">Música do dia</a>
         </div>
         <script>
             var nome = sessionStorage.getItem("nomeUsuario");
             document.getElementById("nomeExibido").textContent = "Olá, " + nome + "!";
             sessionStorage.removeItem("nomeUsuario");
+
+            function mostrarTexto() {
+                var elemento = document.getElementById("texto");
+                elemento.classList.remove("hidden");
+            }
         </script>
     </body>
 </html>

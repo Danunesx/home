@@ -59,8 +59,15 @@ p{
 input {
     border-radius: 20px;
     border: 2px solid #F5F5F5;
-    padding: 5px;
+    padding: 4px;
     outline: none;
+}
+
+.input-format input{
+    text-align: center;
+    color: #0064FB;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
 }
 
 .main-form{
@@ -68,7 +75,6 @@ input {
 }
 
 button {
-    padding: 8px 16px;
     margin-top: 10px;
     cursor: pointer;
     font-family: 'Baloo 2', cursive;
@@ -78,4 +84,18 @@ button {
 label {
     font-size: 20px;
     font-weight: bolder;
+}
+
+.hidden {
+    display: none;
+}
+
+#texto {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+#mostrarSenha{
+    width: 100%;
+    margin-bottom: 5px;
 }
