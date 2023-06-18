@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0064FB;
+    font-family: 'Baloo 2', cursive;
+    text-decoration: none;
+    color: #F5F5F5;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.card {
+    width: 65%;
+    background-color: #F5F5F5;
+    color: #0064FB;
+    border-radius: 30px;
+    padding: 30px 30px 25px;
+}
+
+.buttons .features{
+
+    margin-top: 23;
+    justify-content: space-between;
+}
+
+.features ul{
+    display: flex;
+}
+
+.features ul li {
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0064FB;
+    margin-top: 15px;
+    transition: .2s all ease-in-out;
+}
+
+.features ul li:hover{
+    background-color: #0064FB;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+.fas.fa-quote-left, .fas.fa-quote-right{
+    color: #dadada;
+    font-size: 12px;
+}
+
+#dailyVersesWrapper a{
+    text-decoration: 0;
+    font-style: italic;
+    color: #0064FB;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.dailyVerses.bibleText{
+    margin-bottom: 10px;
+}
+
+#dailyVersesWrapper{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+p.quote {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.author{
+    font-style: italic;
+}
+
+ul {
+    justify-content: center;
+    padding-left: 0;
+}

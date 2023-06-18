@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Daniel Pereira Nunes">
+        <meta http-equiv="content-language" content="pt-br">
+        <title> Versículo do dia </title>
+        <link href="versiculo-do-dia.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script async defer src="https://dailyverses.net/get/verse.js?language=nvi-pt"></script>
+    </head>
+    <body>
+        <div class="card">
+            <h1>Versículo do dia</h1>
+            <div class="text-contet">
+                <div class="quote-area">
+                    <i class="fas fa-quote-left"></i>
+                    <div id="dailyVersesWrapper"></div>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="features">
+                    <ul>
+                        <li class="sound"><i class="fas fa-volume-up"></i></li>
+                        <li class="copy"><i class="fas fa-copy"></i></li>
+                        <li class="twitter"><i class="fab fa-twitter"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            const quoteText = document.querySelector("#dailyVersesWrapper"),
+            authorName = document.querySelector("#dailyVersesWrapper a"),
+            soundBtn = document.querySelector(".sound"),
+            copyBtn = document.querySelector(".copy"),
+            twitterBtn = document.querySelector(".twitter");
+
+            soundBtn.addEventListener("click", ()=>{
+                let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText}`);
+                speechSynthesis.speak(utterance);
+            }); 
+
+            copyBtn.addEventListener("click", ()=>{
+                navigator.clipboard.writeText(quoteText.innerText);
+            }); 
+
+            twitterBtn.addEventListener("click", ()=>{
+                let tweetUrl = `https://twitter.com/intent/tweet?url=${quoteText.innerText}`;
+                window.open(tweetUrl, "__blank");
+            });
+
+
+        </script>
+
+    </body>
+</html>
